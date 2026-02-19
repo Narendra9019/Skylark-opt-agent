@@ -1,4 +1,3 @@
-# Skylark-opt-agent
 # Skylark Drones - Drone Operations Coordinator AI Agent
 
 This project is a conversational AI assistant that helps coordinate pilots, drones, and missions for Skylark Drones.
@@ -46,7 +45,7 @@ It reads operational data from Google Sheets (Pilot roster, Drone fleet, Mission
 
 ---
 
-## Data Sources (Google Sheets)
+## Data Sources 
 
 This agent reads from 3 Google Sheets (3 separate spreadsheet files):
 
@@ -59,6 +58,49 @@ Write-back sync is implemented for:
 
 ---
 
-## Commands Supported (Chat)
+## Commands Supported 
 
 ### Pilot queries
+- show pilots status=available
+- show pilots location=mumbai
+- show pilots skill=mapping location=bangalore
+- show pilots cert=dgca
+- 
+Update pilot status (sync back)
+- update pilot P001 status=On Leave
+- update pilot P001 status=Available
+- 
+Pilot cost
+- pilot cost P001 start=2026-02-06 end=2026-02-08
+
+Drone queries
+- show drones status=available
+- show drones location=mumbai
+- show drones capability=thermal
+- show drones weather=rainy
+- 
+Conflicts
+- check conflicts mission=PRJ001
+- 
+Assignment recommendation
+- assign mission PRJ001
+- 
+Urgent reassignment
+- urgent replacement mission=PRJ002
+- 
+Tech Stack
+- Python
+- Gradio
+- Pandas
+- gspread + google-auth
+- 
+Repository Structure
+- app.py
+- sheets_client.py
+- ops_agent.py
+- matcher.py
+- conflicts.py
+- utils.py
+- requirements.txt
+- README.md
+- decision_log.md
