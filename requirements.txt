@@ -1,0 +1,6 @@
+pandas
+requests
+python-dateutil
+gradio
+gspread
+google-auth
