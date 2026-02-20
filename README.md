@@ -103,4 +103,3 @@ Repository Structure
 - utils.py
 - requirements.txt
 - README.md
-- decision_log.md
