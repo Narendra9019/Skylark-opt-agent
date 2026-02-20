@@ -65,11 +65,11 @@ Write-back sync is implemented for:
 - show pilots location=mumbai
 - show pilots skill=mapping location=bangalore
 - show pilots cert=dgca
-- 
+  
 Update pilot status (sync back)
 - update pilot P001 status=On Leave
 - update pilot P001 status=Available
-- 
+  
 Pilot cost
 - pilot cost P001 start=2026-02-06 end=2026-02-08
 
@@ -78,22 +78,22 @@ Drone queries
 - show drones location=mumbai
 - show drones capability=thermal
 - show drones weather=rainy
-- 
+  
 Conflicts
 - check conflicts mission=PRJ001
-- 
+  
 Assignment recommendation
 - assign mission PRJ001
-- 
+  
 Urgent reassignment
 - urgent replacement mission=PRJ002
-- 
+  
 Tech Stack
 - Python
 - Gradio
 - Pandas
 - gspread + google-auth
-- 
+  
 Repository Structure
 - app.py
 - sheets_client.py
